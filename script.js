@@ -37,7 +37,7 @@ function AnchorElement(href, className, id, flag = false,) {
 
 AnchorElement.prototype = Object.create(HTMLElement.prototype);
 IMGElement.prototype = Object.create(HTMLElement.prototype);
-HTMLElementInput.prototype = Object.create(AnchorElement.prototype);
+HTMLElementInput.prototype = Object.create(HTMLElement.prototype);
 
 AnchorElement.prototype.redirect = function () {
     console.log("rendering...", this.href);
