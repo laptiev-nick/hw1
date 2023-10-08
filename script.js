@@ -61,8 +61,8 @@ link2.rotate();
 
 img.rotate();
 
-function HTMLElementInput(id, price) {
-    this.id = id;
+function HTMLElementInput(price, ...args) {
+    mySuper(this, HTMLElement, args);
     this.price = price;
 
     this.valid = function () {
@@ -78,13 +78,10 @@ HTMLElementInput.prototype.invalid = function () {
     console.log('check your info');
 }
 
-const input = new HTMLElementInput('ID-320192', '276');
+const input = new HTMLElementInput(1000, 'input_class', 'input_id');
 
 console.log(input, '=> HTML-element-input');
-input.redirect();
 input.rotate();
 input.render();
 input.available();
 input.invalid();
-
-
