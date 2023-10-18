@@ -1,0 +1,11 @@
+.box {
+	width: 30px;
+	height: 30px;
+	background: #d0d0d0;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.column {
+	background: rgb(139 161 144);
+}
