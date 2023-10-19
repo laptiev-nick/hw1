@@ -1,12 +1,18 @@
-function multiplication(num){
-  
+function multiplication(num) {
+    renderTable(num);
+}
+
+  const renderTable = (num) => {
     const table = document.createElement("table");
     document.body.append(table);
-  
+    renderRows(table, num);
+  }
+ 
+  const renderRows = (table, num) => {
     for(let i = 1; i <= num; i++){
       const tr = document.createElement('tr');
       table.appendChild(tr);
-  
+      
       renderColumns(num, i, tr);
     }
   }
