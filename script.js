@@ -7,11 +7,15 @@ function multiplication(num){
       const tr = document.createElement('tr');
       table.appendChild(tr);
   
-      for(let j = 1; j <= num; j++){
-        let td = document.createElement('td');
-        td.innerText = i * j;
-        tr.appendChild(td);
-      }
+      renderColumns(num, i, tr);
+    }
+  }
+
+  const renderColumns = (num, i, tr) => {
+    for(let j = 1; j <= num; j++){
+      let td = document.createElement('td');
+      td.innerText = i * j;
+      tr.appendChild(td);
     }
   }
   
