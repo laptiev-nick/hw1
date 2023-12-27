@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         xhr.send();
+        
     }
 
     const loadCategories = () => {
