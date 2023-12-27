@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 callback(JSON.parse(xhr.responseText));
             }
         };
+        
 
         xhr.send();
         
