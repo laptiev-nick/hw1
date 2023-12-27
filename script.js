@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     let categoriesContainer = document.querySelector('.categories-container');
     let productsContainer = document.querySelector('.products-container');
